@@ -32,6 +32,6 @@ app.get("/products", async(req,res) => {
  res.status(200).json("hiiii")
 });
 
-app.listen(port,hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
 });
