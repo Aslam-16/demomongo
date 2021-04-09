@@ -3,7 +3,7 @@ const bodyParser       = require('body-parser');
 const app              = express();
 // const mongodb          = require('mongodb')
 require('dotenv').config()
-const port=process.env.Port
+const port=process.env.PORT
 const MongoClient = require('mongodb').MongoClient;
 const uri=process.env.DBURL
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
